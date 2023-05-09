@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Matrices</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/bulma-prefers-dark" />
+  </head>
+  <body>
+    <div class="app-outer-div">
+      <div class="app-div">
+        <div class="box nav">
+          <span class="title main-title is-4">Equation systems</span><span class="blink title is-4 has-text-primary">_</span>
+        </div>
+        <div class="first-segment">
+          <div class="equation-segment app1">
+            <div class="instructions">
+              Please type the desired function with the variables on the left side of the equation.
+            </div>
+            <div class="equation-list"></div>
+          </div>
+          <div class="input-div app1">
+            <div class="field">
+              <input type="text" class="input is-primary equation-input"  placeholder="2x + 3y...">
+              <button class="button add-equation is-primary">+</button>
+            </div>
+            <div class="field">
+              <button disabled class="button create-matrix">Solve system</button>
+            </div>
+          </div>
+          <div class="squares-segment app2">
+            <form class="squares-div">
+            </form>
+          </div>
+          <div class="matrix-buttons app2">
+            <button class="button minus">-</button>
+            <button class="button resolve-matrix">Solve matrix</button>
+            <button class="button plus">+</button>
+          </div>
+        </div>
+        <div class="second-segment">
+          <div class="results-list app1">
+            <hr>
+          </div>
+          <div class="matrix-list app2"></div>
+        </div>
+        <div class="bottom-div has-background-dark">
+          <span class="button-app1 icon is-large has-text-primary">
+            <ion-icon name="menu" id="appButton1"></ion-icon>
+          </span>
+          <span class="button-app2 icon is-large">
+          <ion-icon name="apps-outline" id="appButton2"></ion-icon>
+          </span>
+        </div>
+      </div>
+    </div>
+    <script src="classes.js"></script>
+    <script src="app1.js"></script>
+    <script src="app2.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/4c88b2171a.js" crossorigin="anonymous"></script>
+  </body>
+</html>

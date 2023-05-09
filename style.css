@@ -1,0 +1,237 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Math&display=swap');
+
+
+html, body {
+  height: 100%;
+  background-color: black;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.a {
+  border-style: solid;
+  border-width: 1px;
+}
+
+.blink {
+  -webkit-animation: 2s linear infinite condemned_blink_effect; 
+}
+
+@keyframes condemned_blink_effect {
+  0% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+.main-title {
+  margin: 24px;
+  margin-right: 0;
+}
+
+.input-div {
+  width: 99%;
+}
+
+.input-div > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 5px;
+  width: 300px;
+  margin: auto;
+}
+
+.equation-segment {
+  margin-top: 2.4rem;
+  height: 272px;
+}
+
+.equation-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  margin-top: 1.5rem;
+}
+
+.equation-div {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
+.equation, .bottom-equation {
+  width: 250px;
+  font-family: 'Times New Roman';
+  font-style: italic;
+  color: grey;
+}
+
+.results-list {
+  display: flex;
+  flex-direction: column;
+  margin: 22px;
+}
+
+.bigger-div {
+  display: flex;
+  column-gap: 20px;
+  width: 300px;
+  align-items: center;
+}
+
+.equations-div {
+  width: 160px;
+  margin-left: 20px;
+}
+
+.vertical-hr {
+  width: 2px;
+  background: white;
+  height: fit content;
+  margin: 0 10px;
+}
+
+.delete-results {
+  position: absolute;
+  right: 35px;
+}
+
+.results-div {
+  
+}
+
+.create-matrix {
+
+}
+
+.bottom-div {
+  position: sticky;
+  bottom: 0;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  column-gap: 140px;
+}
+
+.squares-segment {
+  height: 410px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.squares-div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.squares-div > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 5px;
+  width: 300px;
+  margin: auto;
+}
+
+.matrix-square {
+  width: 38px;
+  height: 38px;
+  font-size: 70%;
+  text-align: center;
+}
+
+.matrix-buttons {
+  display: flex;
+  flex-direction: row;
+  column-gap: 5px;
+  justify-content: center;
+}
+
+.matrix-div {
+  display: flex;
+  flex-direction: row;
+}
+
+.matrix-numbers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ion-icon {
+  font-size: 170%;
+}
+
+.hide {
+  display: none;
+}
+
+.app-div {
+  width: 350px;
+  height: 635px;
+  position: relative;
+  overflow: auto;
+  background-color: #17181c;
+}
+
+.app-outer-div {
+  width: 350px;
+  height: 635px;
+  margin: auto;
+  border-radius: 15px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #363636;
+  overflow: hidden;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.first-segment {
+  position: relative;
+  bottom: 1.5rem;
+}
+
+.matrix-list {
+  margin: 22px;
+  margin-top: 0;
+}
+
+.result-variable {
+  width: 300px;
+  font-family: 'Times New Roman';
+  font-style: italic;
+}
+
+.instructions {
+  width: 330px;
+  margin: 30px auto;
+  text-align: center;
+  font-style: italic;
+  color: grey;
+  font-size: 100%;
+}

@@ -6,8 +6,8 @@ class Equation {
   }
   orderVariables() {
     for (let i = 0; i < this.unorderedEquation.length - 1; i++) {
-      const letter = this.unorderedEquation[i].match(/[^\d+\-]/g).join("");
-      const num = Number(this.unorderedEquation[i].match(/[\d+\-]/g).join(""));
+      const letter = this.unorderedEquation[i].match(/[^\d+\-.]/g).join("");
+      const num = Number(this.unorderedEquation[i].match(/[\d+\-.]/g).join(""));
       if (this.letterList.includes(letter) == false) {
         this[letter] = num;
         this.letterList.push(letter);

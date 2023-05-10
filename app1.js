@@ -74,7 +74,8 @@ function checkEquation(rawEquation) {
   }
   rawEquation = rawEquation.replaceAll(',', '.');
   const equation = rawEquation.split(/[\s\+\-=]+/);
-  const equationSignals = rawEquation.split(/[\d\w\s=]+/);
+  const equationSignals = rawEquation.split(/[\d\w\s=.]+/);
+  console.log(equation, equationSignals);
   for (let i = 0; i < equation.length; i++) {
     if (i !== equation.length - 1) {
       if (equation[i].match(/\d+/g) == null) {

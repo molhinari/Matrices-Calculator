@@ -1,6 +1,8 @@
-# [Matrices / Equation System Calculator](https://matrices-app.netlify.app/)
+# Matrices / Equation System Calculator
 
 A calculator able to solve equation systems and matrices up to 9x9 order.
+
+## [Preview Link Here!](https://matrices-app.netlify.app/)
 
 -----------
 
@@ -12,7 +14,7 @@ After experimenting a bit I finished my first prototype, which was only able to 
 ## Features
 
 - Able to solve 9x9 order equation systems
-- Can calculate the determinant of a matrix
+- Can calculate the determinant of matrices
 - Intuitive UI
 - Made using CSS classes and Bulma
 - Simple code: Plain Javascript

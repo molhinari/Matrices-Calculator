@@ -235,3 +235,35 @@ input[type=number] {
   color: grey;
   font-size: 100%;
 }
+
+/*fixing dark mode for some browsers*/
+
+.box, .input, .title, .button {
+  background-color: black;
+  border-color: #363636;
+  color: white;
+}
+
+.button:disabled {
+  background-color: black;
+}
+
+hr {
+  background-color: #363636;
+}
+
+.matrix-numbers > div, .determinant-div, .result-variable + span {
+  color: white;
+}
+
+.icon {
+  color: #bbb; /* Cor padrão quando não selecionado */
+}
+
+.icon:hover, .icon:focus {
+  color: #03DAC6; /* Cor quando estiver em hover ou focado */
+}
+
+.icon:active {
+  color: #BB86FC; /* Cor quando estiver ativo */
+}
